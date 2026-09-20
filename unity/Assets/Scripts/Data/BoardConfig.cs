@@ -17,5 +17,7 @@ namespace GearDefenders
         public int totalRounds = 12;
         public float rewardDuration = 1.6f;
         public int levelLabel = 12;
+        public Sprite gearSprite;
+        public Sprite coreSprite;
     }
 }

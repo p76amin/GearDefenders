@@ -15,5 +15,6 @@ namespace GearDefenders
         public float moveSpeed = 55f;
         public Color tint = new Color(0.55f, 0.22f, 0.22f);
         public Sprite sprite;
+        public CombatantAnimSet animSet;
     }
 }

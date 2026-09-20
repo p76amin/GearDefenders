@@ -20,5 +20,6 @@ namespace GearDefenders
         public UnitDefinition mergesInto;
         public Color tint = Color.white;
         public Sprite sprite;
+        public CombatantAnimSet animSet;
     }
 }

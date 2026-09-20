@@ -15,6 +15,7 @@ namespace GearDefenders
             if (catalog == null)
                 catalog = RuntimeCatalogFactory.Create();
 
+            CombatantArtLibrary.Bind(catalog);
             EnsureEventSystem();
             Build(catalog);
         }
@@ -29,10 +30,24 @@ namespace GearDefenders
 
         void Build(GameCatalog catalog)
         {
-            var gearSprite = PlaceholderArt.Gear(Color.white);
-            var coreSprite = PlaceholderArt.Gear(UiTheme.Core, 128, 10);
-            var unitSprite = PlaceholderArt.Triangle(Color.white);
-            var enemySprite = PlaceholderArt.Circle(Color.white, 48, 0.46f);
+            var gearSprite = CombatantArtLibrary.GearSprite;
+            if (gearSprite == null && catalog.board != null)
+                gearSprite = catalog.board.gearSprite;
+            if (gearSprite == null)
+                gearSprite = PlaceholderArt.Gear(Color.white);
+
+            var coreSprite = CombatantArtLibrary.CoreSprite;
+            if (coreSprite == null && catalog.board != null)
+                coreSprite = catalog.board.coreSprite;
+            if (coreSprite == null)
+                coreSprite = PlaceholderArt.Gear(UiTheme.Core, 128, 10);
+
+            var unitSprite = CombatantArtLibrary.Archer() != null && CombatantArtLibrary.Archer().Portrait != null
+                ? CombatantArtLibrary.Archer().Portrait
+                : PlaceholderArt.Triangle(Color.white);
+            var enemySprite = CombatantArtLibrary.Grunt() != null && CombatantArtLibrary.Grunt().Portrait != null
+                ? CombatantArtLibrary.Grunt().Portrait
+                : PlaceholderArt.Circle(Color.white, 48, 0.46f);
             var ringSprite = PlaceholderArt.Ring(Color.white, 64, 0.48f, 0.32f);
             var cactus = PlaceholderArt.Cactus(UiTheme.Cactus);
 

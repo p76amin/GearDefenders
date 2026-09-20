@@ -38,7 +38,7 @@ namespace GearDefenders
             Unit = unit;
             Boost = null;
             Cost = unit.shopCost;
-            ApplyVisual(unit.displayName, unit.tint, unit.rank);
+            ApplyVisual(unit.displayName, unit.tint, unit.rank, unit.sprite);
         }
 
         public void SetBoost(BoostDefinition boost)
@@ -48,7 +48,7 @@ namespace GearDefenders
             Unit = null;
             Boost = boost;
             Cost = boost.shopCost;
-            ApplyVisual(boost.displayName, boost.tint, boost.rank);
+            ApplyVisual(boost.displayName, boost.tint, boost.rank, boost.sprite);
         }
 
         public void SetEmpty()
@@ -102,11 +102,20 @@ namespace GearDefenders
             _dragging = false;
         }
 
-        void ApplyVisual(string displayName, Color tint, int rank)
+        void ApplyVisual(string displayName, Color tint, int rank, Sprite sprite)
         {
             _icon.enabled = true;
-            _icon.sprite = _shop.GearSprite;
-            _icon.color = tint;
+            _icon.preserveAspect = true;
+            if (sprite != null)
+            {
+                _icon.sprite = sprite;
+                _icon.color = CombatantArtLibrary.VisualTint(tint, rank);
+            }
+            else
+            {
+                _icon.sprite = _shop.GearSprite;
+                _icon.color = tint;
+            }
             _name.text = displayName + "  R" + rank;
             _cost.text = Cost + "c";
             _frame.color = Color.Lerp(UiTheme.CellStroke, Color.black, 0.2f);
@@ -121,6 +130,7 @@ namespace GearDefenders
             var img = go.GetComponent<UnityEngine.UI.Image>();
             img.sprite = _icon.sprite;
             img.color = _icon.color;
+            img.preserveAspect = true;
             go.GetComponent<RectTransform>().sizeDelta = new Vector2(90, 90);
             return go;
         }

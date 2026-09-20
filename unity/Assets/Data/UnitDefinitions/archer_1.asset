@@ -27,3 +27,4 @@ MonoBehaviour:
   mergesInto: {fileID: 11400000, guid: 672326c20c997824aafc252a977f1097, type: 2}
   tint: {r: 0.24705882, g: 0.65882355, b: 0.41568628, a: 1}
   sprite: {fileID: 0}
+  animSet: {fileID: 11400000, guid: c8e1a0b24d5f4c9e8a173b6d02f94c11, type: 2}

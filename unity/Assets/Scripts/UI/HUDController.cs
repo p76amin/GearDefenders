@@ -101,8 +101,11 @@ namespace GearDefenders
                 var chip = UiFactory.Rect("Chip", _previewRoot);
                 chip.sizeDelta = new Vector2(72, 36);
                 var img = chip.gameObject.AddComponent<UnityEngine.UI.Image>();
-                img.sprite = _chipSprite;
-                img.color = pair.Value.def.tint;
+                img.preserveAspect = true;
+                img.sprite = pair.Value.def.sprite != null ? pair.Value.def.sprite : _chipSprite;
+                img.color = pair.Value.def.sprite != null
+                    ? CombatantArtLibrary.VisualTint(pair.Value.def.tint, 1)
+                    : pair.Value.def.tint;
                 img.raycastTarget = false;
                 UiFactory.Label("Count", chip, "x" + pair.Value.count, 16, Color.white);
             }

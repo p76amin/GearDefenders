@@ -22,3 +22,4 @@ MonoBehaviour:
   moveSpeed: 78
   tint: {r: 0.65882355, g: 0.3529412, b: 0.16470589, a: 1}
   sprite: {fileID: 0}
+  animSet: {fileID: 11400000, guid: c8e1a0b24d5f4c9e8a173b6d02f94c15, type: 2}

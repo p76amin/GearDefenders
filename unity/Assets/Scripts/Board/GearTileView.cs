@@ -46,6 +46,7 @@ namespace GearDefenders
             _icon.enabled = !empty;
             if (!empty)
             {
+                _icon.preserveAspect = true;
                 _icon.sprite = State.TileType == GearTileType.PowerCore
                     ? _grid.CoreSprite
                     : _grid.GearSprite;
