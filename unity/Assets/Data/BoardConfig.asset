@@ -24,3 +24,6 @@ MonoBehaviour:
   totalRounds: 12
   rewardDuration: 1.6
   levelLabel: 12
+  gearSprite: {fileID: 5429776337635475631, guid: 92cd289c8195ec110a60d301630c4827, type: 3}
+  coreSprite: {fileID: 1319207609742115668, guid: eee6f16862d37057bec1e1d53af04d23, type: 3}
+

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f3c1a7e2b5841d0a6e4c8b0912d7a11, type: 3}
+  m_Name: Barbarian
+  m_EditorClassIdentifier: Assembly-CSharp::GearDefenders.CombatantAnimSet
+  idleSheet: {fileID: 2800000, guid: 827c58036e051c2a3b7fe79cb05fe403, type: 3}
+  walkSheet: {fileID: 2800000, guid: 6d5146e814d1691a20e78d01a00666fd, type: 3}
+  attackSheet: {fileID: 2800000, guid: e0f62fef805ca40e646327ede547dde8, type: 3}
+  hurtSheet: {fileID: 2800000, guid: 83b95157957fc3e996fdc1a9459c6f78, type: 3}
+  deathSheet: {fileID: 2800000, guid: b2d58cde24fcf471f760ae307ae54345, type: 3}
+  sheetKind: 0
+  frameWidth: 184
+  gridCellSize: 64
+  pixelsPerUnit: 32
+  idleFps: 8
+  walkFps: 10
+  attackFps: 10
+  hurtFps: 12
+  deathFps: 10

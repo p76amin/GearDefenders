@@ -81,6 +81,7 @@ namespace GearDefenders
                 catalog.rounds[i] = round;
             }
 
+            CombatantArtLibrary.Bind(catalog);
             return catalog;
         }
 

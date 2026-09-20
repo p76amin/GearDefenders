@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f3c1a7e2b5841d0a6e4c8b0912d7a11, type: 3}
+  m_Name: Grunt
+  m_EditorClassIdentifier: Assembly-CSharp::GearDefenders.CombatantAnimSet
+  idleSheet: {fileID: 2800000, guid: 7dd37c8b7b23dadc9a9622251e8d6db9, type: 3}
+  walkSheet: {fileID: 2800000, guid: bd894464d46182506c854854488bed23, type: 3}
+  attackSheet: {fileID: 2800000, guid: 5b9ab06879a9981744a3899d1d577d5f, type: 3}
+  hurtSheet: {fileID: 2800000, guid: 22b12c9153206658c80fa7f7faf400c9, type: 3}
+  deathSheet: {fileID: 2800000, guid: 2eae713efa134ddb5efe0adaf5bc4c05, type: 3}
+  sheetKind: 0
+  frameWidth: 150
+  gridCellSize: 64
+  pixelsPerUnit: 32
+  idleFps: 8
+  walkFps: 10
+  attackFps: 12
+  hurtFps: 12
+  deathFps: 10
