@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6696c3c8863f984469b132c4c65d5583, type: 3}
+  m_Name: runner
+  m_EditorClassIdentifier: Assembly-CSharp::GearDefenders.EnemyDefinition
+  id: runner
+  displayName: Runner
+  hp: 24
+  atk: 6
+  critChance: 0.06
+  attackInterval: 1
+  attackRange: 34
+  moveSpeed: 78
+  tint: {r: 0.65882355, g: 0.3529412, b: 0.16470589, a: 1}
+  sprite: {fileID: 0}

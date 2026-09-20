@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a46910b08a37ac46aa61f2b606a4927, type: 3}
+  m_Name: GameCatalog
+  m_EditorClassIdentifier: Assembly-CSharp::GearDefenders.GameCatalog
+  board: {fileID: 11400000, guid: 42c3dd25dc9b43647b1efc76db4d63b0, type: 2}
+  shopUnits:
+  - {fileID: 11400000, guid: fafc720e6899bc941833e33f9a60db84, type: 2}
+  - {fileID: 11400000, guid: 36ef7946b2828634d8c86579182d5e64, type: 2}
+  - {fileID: 11400000, guid: f118510e2ab71374f9891e511bb2e3e4, type: 2}
+  shopBoosts:
+  - {fileID: 11400000, guid: 806bc2d9d1c7dc940ac9d192e5fe2c08, type: 2}
+  enemies:
+  - {fileID: 11400000, guid: cd1d7b1230935b14bb35d1aa3ed28d8a, type: 2}
+  - {fileID: 11400000, guid: 3b0f064e2b303ea4b87f1a5912eb46ac, type: 2}
+  - {fileID: 11400000, guid: 8207fc3f48d5ee8448349ded2d54b401, type: 2}
+  rounds:
+  - {fileID: 11400000, guid: d1d346cf203bf9749ba236e852c0b4d0, type: 2}
+  - {fileID: 11400000, guid: 68a7da245a8217a418ab16644c8ac108, type: 2}
+  - {fileID: 11400000, guid: 249d62167b7afe242a380e918d6bbc7c, type: 2}
+  - {fileID: 11400000, guid: 3f887f5fe05f457488f71a09ca5f7b5c, type: 2}
+  - {fileID: 11400000, guid: 05aea9643be7787428d9f29128d6c21e, type: 2}
+  - {fileID: 11400000, guid: 6197870c0f86cbc45a623059a463db0b, type: 2}
+  - {fileID: 11400000, guid: 7ab5161ed39b025469455c3716436c2f, type: 2}
+  - {fileID: 11400000, guid: 4ed1139dc4b338944998d15a1798d434, type: 2}
+  - {fileID: 11400000, guid: 7f8c78058bc2e6c4ba9855d299d31014, type: 2}
+  - {fileID: 11400000, guid: 0a3e35e4bbc84a64ca83d15a7d3d8f00, type: 2}
+  - {fileID: 11400000, guid: 25c143d3189e15b43b5fc59b6a40d742, type: 2}
+  - {fileID: 11400000, guid: 32dfaee06ced41d46a9dadd1cd3d8a3f, type: 2}

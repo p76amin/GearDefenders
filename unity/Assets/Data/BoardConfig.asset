@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f2104861c31284db8be18c8061b7fb, type: 3}
+  m_Name: BoardConfig
+  m_EditorClassIdentifier: Assembly-CSharp::GearDefenders.BoardConfig
+  gridWidth: 6
+  gridHeight: 5
+  powerCorePosition: {x: 2, y: 2}
+  coreRotationSpeed: 110
+  connectedGearRotationSpeed: 70
+  meshLockDuration: 0.14
+  startingCoins: 40
+  refreshCost: 3
+  startingBaseHP: 930
+  totalRounds: 12
+  rewardDuration: 1.6
+  levelLabel: 12

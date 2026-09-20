@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66abedff856ccec42967dc8d8c1ee687, type: 3}
+  m_Name: barb_1
+  m_EditorClassIdentifier: Assembly-CSharp::GearDefenders.UnitDefinition
+  id: barb_1
+  displayName: Barbarian
+  rank: 1
+  shopCost: 10
+  baseHP: 120
+  baseATK: 14
+  critChance: 0.08
+  attackInterval: 1.05
+  attackRange: 42
+  isRanged: 0
+  moveSpeed: 70
+  baseProductionRate: 0.32
+  mergesInto: {fileID: 11400000, guid: 9a9ec4abaa5e9ac41b54824b17803936, type: 2}
+  tint: {r: 0.76862746, g: 0.28235295, b: 0.22745098, a: 1}
+  sprite: {fileID: 0}

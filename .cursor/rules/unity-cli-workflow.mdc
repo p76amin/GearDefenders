@@ -1,0 +1,31 @@
+---
+description: Unity 6.6 URP 2D + official Unity CLI / MCP / skills workflow
+alwaysApply: true
+---
+
+# Unity development workflow
+
+## Project layout
+
+- Unity project root: `unity/`
+- Agent skills (project-local): `unity/.cursor/skills/` (`unity-cli`, `unity-pipeline`)
+- Official Unity skill pack (user-global): `~/.cursor/skills/` from `~/.cursor/unity-agent-plugin`
+- Pipeline HTTP fallback: `unity/Tools/Invoke-UnityPipeline.ps1`
+
+## Stack
+
+- Unity **6000.6.x** (6.6), template **Universal 2D** (URP 2D Renderer)
+- Drive the live Editor with the **official Unity CLI** and **official `unity mcp`** (Pipeline). Do not use Coplay / `MCPForUnity` / `localhost:8080/mcp`.
+- Prefer live Editor commands (`unity command`, `unity command eval`, or Unity MCP tools) over hand-editing `.unity` YAML when Pipeline is connected (`unity status` → ready).
+- Domain how-to comes from Unity's official skills (`unity-cli`, `unity-pipeline`, UI/2D/URP/package skills). Keep them current with `unity skill refresh` and `git -C $env:USERPROFILE\.cursor\unity-agent-plugin pull`.
+
+## CLI / MCP habits
+
+```powershell
+cd F:\Gdev\Repos\GearDefenders\unity
+unity status --project-path F:\Gdev\Repos\GearDefenders\unity
+unity open . --args "-automated"   # preferred: avoids modal dialog stalls
+unity command set_autotick --enable true   # keep Editor ticking while unfocused
+```
+
+Project MCP config lives at [`.cursor/mcp.json`](../mcp.json) and launches `unity mcp --project-path <this unity project>`. After changing it, reload Cursor MCP. This project pins `com.unity.pipeline` **0.7.0-exp.1**; drive the Editor with `unity command` / `unity command eval`. If the CLI cannot parse command lines, fall back to [`unity/Tools/Invoke-UnityPipeline.ps1`](unity/Tools/Invoke-UnityPipeline.ps1).

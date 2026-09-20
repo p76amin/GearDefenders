@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "unity": {
+      "type": "stdio",
+      "command": "C:\\Users\\AMIN\\AppData\\Local\\Unity\\bin\\unity.exe",
+      "args": [
+        "mcp",
+        "--project-path",
+        "${workspaceFolder}/unity"
+      ]
+    }
+  }
+}
